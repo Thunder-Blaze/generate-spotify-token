@@ -1,0 +1,42 @@
+{
+  "name": "@thunderblaze/generate-spotify-token",
+  "version": "1.0.0",
+  "description": "A Package that will help you create and cache the spotify token generated from your credentials until the token expires.",
+  "keywords": [
+    "spotify",
+    "token",
+    "caching"
+  ],
+  "homepage": "https://github.com/Thunder-Blaze/generate-spotify-token#readme",
+  "bugs": {
+    "url": "https://github.com/Thunder-Blaze/generate-spotify-token/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thunder-Blaze/generate-spotify-token.git"
+  },
+  "license": "ISC",
+  "author": "ThunderBlaze",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/node": "^22.14.0",
+    "axios": "^1.8.4",
+    "chalk": "^5.4.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.24.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.29.1"
+  }
+}
