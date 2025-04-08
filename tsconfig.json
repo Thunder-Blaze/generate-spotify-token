@@ -4,11 +4,18 @@
     "esModuleInterop": true,
     "target": "esnext",
     "moduleResolution": "node",
-    "typeRoots": ["node_modules/@types", "types"],
     "sourceMap": true,
     "outDir": "dist",
     "rootDir": "./src",
-    "strict": true
+    "strict": true,
+    "lib": ["es2015"],
+    "declaration": true,
+    "declarationMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@types/*": ["types/*"]
+    }
   },
-  "lib": ["es2015"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

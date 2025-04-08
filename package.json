@@ -1,6 +1,6 @@
 {
   "name": "@thunderblaze/generate-spotify-token",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Package that will help you create and cache the spotify token generated from your credentials until the token expires.",
   "keywords": [
     "spotify",
@@ -19,6 +19,7 @@
   "author": "ThunderBlaze",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc && node dist/index.js",
     "lint": "eslint . --ext .ts",
