@@ -4,9 +4,11 @@
     "esModuleInterop": true,
     "target": "esnext",
     "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types", "types"],
     "sourceMap": true,
     "outDir": "dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "strict": true
   },
   "lib": ["es2015"]
 }
