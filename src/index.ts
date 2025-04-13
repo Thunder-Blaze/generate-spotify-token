@@ -89,9 +89,3 @@ export async function generateSpotifyAccessToken(clientId: string, clientSecret:
         return null
     }
 }
-
-// const SPOTIFY_TOKEN_SECRET_KEY = process.env.SPOTIFY_TOKEN_SECRET_KEY;
-// const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
-// const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
-
-// getSpotifyAccessToken(SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_TOKEN_SECRET_KEY);

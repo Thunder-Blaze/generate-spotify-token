@@ -28,11 +28,13 @@ declare module 'spotify-access-token' {
      * @param clientId - The client ID for the Spotify API.
      * @param clientSecret - The client secret for the Spotify API.
      * @param encryptionKey - The key used for encrypting and decrypting the cached token (optional).
+     * @param tokenFolder - Optional path where the encrypted token file should be saved (defaults to cwd).
      * @returns The Spotify access token, or null if there was an error.
      */
     export function generateSpotifyAccessToken(
         clientId: string,
         clientSecret: string,
-        encryptionKey?: string
+        encryptionKey?: string,
+        tokenFolder?: string
     ): Promise<string | null>;
 }
