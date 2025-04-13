@@ -2,10 +2,7 @@ import axios from 'axios'
 import fs from 'fs/promises'
 import path from 'path'
 import crypto from 'crypto'
-// import dotenv from 'dotenv'
 import chalk from 'chalk'
-
-// dotenv.config()
 
 function encrypt(text: string, encryptionKey: string): string {
     const iv = crypto.randomBytes(16)
@@ -32,9 +29,8 @@ function decrypt(data: string, encryptionKey: string): string {
     return decrypted
 }
 
-export async function generateSpotifyAccessToken(clientId: string, clientSecret: string, encryptionKey: string = '$up3r_S3cr3!_k3y'): Promise<string | null> {
-    const cacheFilePath = path.resolve('.spotify-token')
-    // const encryptionKey = process.env.SPOTIFY_TOKEN_SECRET_KEY ?? '$up3r_S3cr3!_k3y' // store this in .env
+export async function generateSpotifyAccessToken(clientId: string, clientSecret: string, encryptionKey: string = '$up3r_S3cr3!_k3y', tokenFolder: string = ''): Promise<string | null> {
+    const cacheFilePath = path.resolve(tokenFolder,'.spotify-token')
 
     interface CachedToken {
         access_token: string

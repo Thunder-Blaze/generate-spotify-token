@@ -15,3 +15,14 @@ async function getToken() {
 
 getToken();
 ```
+
+#### If you are Deploying
+
+Some Providers only allow you to write in /tmp folder
+In those cases you can use the function like this
+
+```js
+generateSpotifyAccessToken(clientId, clientSecret, encryptionKey, '/tmp');
+```
+
+> For the deployment providers with no write support, currently there is no support
